@@ -7,21 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F150246A4DA387424F34388 /* Pods_Food_Snap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C1F4CC0E4B24950F56BBFB /* Pods_Food_Snap.framework */; };
+		4152C52A1F29E08000D1D7C4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152C5291F29E08000D1D7C4 /* Constants.swift */; };
 		41AD08791F28D45C00354D00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD08781F28D45C00354D00 /* AppDelegate.swift */; };
-		41AD087B1F28D45C00354D00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD087A1F28D45C00354D00 /* ViewController.swift */; };
 		41AD087E1F28D45C00354D00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41AD087C1F28D45C00354D00 /* Main.storyboard */; };
 		41AD08801F28D45C00354D00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41AD087F1F28D45C00354D00 /* Assets.xcassets */; };
 		41AD08831F28D45C00354D00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41AD08811F28D45C00354D00 /* LaunchScreen.storyboard */; };
+		41AD088B1F28D5DD00354D00 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD088A1F28D5DD00354D00 /* PhotoViewController.swift */; };
+		41AD088D1F28E0B900354D00 /* Inceptionv3.mlmodel in Resources */ = {isa = PBXBuildFile; fileRef = 41AD088C1F28E0B900354D00 /* Inceptionv3.mlmodel */; };
+		41BB5B8B1F28F6A2007E1448 /* Inceptionv3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BB5B8A1F28F6A2007E1448 /* Inceptionv3.swift */; };
+		41BB5B8F1F290D10007E1448 /* NutritionixAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BB5B8E1F290D10007E1448 /* NutritionixAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4152C5291F29E08000D1D7C4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		41AD08751F28D45C00354D00 /* Food Snap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food Snap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41AD08781F28D45C00354D00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		41AD087A1F28D45C00354D00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		41AD087D1F28D45C00354D00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		41AD087F1F28D45C00354D00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41AD08821F28D45C00354D00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41AD08841F28D45C00354D00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41AD088A1F28D5DD00354D00 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		41AD088C1F28E0B900354D00 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		41BB5B8A1F28F6A2007E1448 /* Inceptionv3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inceptionv3.swift; sourceTree = "<group>"; };
+		41BB5B8E1F290D10007E1448 /* NutritionixAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionixAPI.swift; sourceTree = "<group>"; };
+		5DC1703E033D11080F2B20DF /* Pods-Food Snap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food Snap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Food Snap/Pods-Food Snap.debug.xcconfig"; sourceTree = "<group>"; };
+		BE81446138376EC673E47335 /* Pods-Food Snap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food Snap.release.xcconfig"; path = "Pods/Target Support Files/Pods-Food Snap/Pods-Food Snap.release.xcconfig"; sourceTree = "<group>"; };
+		E4C1F4CC0E4B24950F56BBFB /* Pods_Food_Snap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Food_Snap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F150246A4DA387424F34388 /* Pods_Food_Snap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C28FD8637082335387369E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DC1703E033D11080F2B20DF /* Pods-Food Snap.debug.xcconfig */,
+				BE81446138376EC673E47335 /* Pods-Food Snap.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		41AD086C1F28D45B00354D00 = {
 			isa = PBXGroup;
 			children = (
+				41AD088C1F28E0B900354D00 /* Inceptionv3.mlmodel */,
 				41AD08771F28D45C00354D00 /* Food Snap */,
 				41AD08761F28D45C00354D00 /* Products */,
+				804D41F7BF1A6CC325B62462 /* Frameworks */,
+				1C28FD8637082335387369E7 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +79,49 @@
 		41AD08771F28D45C00354D00 /* Food Snap */ = {
 			isa = PBXGroup;
 			children = (
-				41AD08781F28D45C00354D00 /* AppDelegate.swift */,
-				41AD087A1F28D45C00354D00 /* ViewController.swift */,
-				41AD087C1F28D45C00354D00 /* Main.storyboard */,
-				41AD087F1F28D45C00354D00 /* Assets.xcassets */,
 				41AD08811F28D45C00354D00 /* LaunchScreen.storyboard */,
+				41AD087C1F28D45C00354D00 /* Main.storyboard */,
+				41AD08781F28D45C00354D00 /* AppDelegate.swift */,
+				41AD088A1F28D5DD00354D00 /* PhotoViewController.swift */,
+				41BB5B8D1F290CF9007E1448 /* Nutritionix API */,
+				41BB5B8C1F28F6AF007E1448 /* ML Model */,
+				41C61EBE1F29D6C600284858 /* Constants */,
+				41AD087F1F28D45C00354D00 /* Assets.xcassets */,
 				41AD08841F28D45C00354D00 /* Info.plist */,
 			);
 			path = "Food Snap";
+			sourceTree = "<group>";
+		};
+		41BB5B8C1F28F6AF007E1448 /* ML Model */ = {
+			isa = PBXGroup;
+			children = (
+				41BB5B8A1F28F6A2007E1448 /* Inceptionv3.swift */,
+			);
+			path = "ML Model";
+			sourceTree = "<group>";
+		};
+		41BB5B8D1F290CF9007E1448 /* Nutritionix API */ = {
+			isa = PBXGroup;
+			children = (
+				41BB5B8E1F290D10007E1448 /* NutritionixAPI.swift */,
+			);
+			path = "Nutritionix API";
+			sourceTree = "<group>";
+		};
+		41C61EBE1F29D6C600284858 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				4152C5291F29E08000D1D7C4 /* Constants.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		804D41F7BF1A6CC325B62462 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4C1F4CC0E4B24950F56BBFB /* Pods_Food_Snap.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +131,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41AD08871F28D45C00354D00 /* Build configuration list for PBXNativeTarget "Food Snap" */;
 			buildPhases = (
+				D802A8A99371A575B34E1CC3 /* [CP] Check Pods Manifest.lock */,
 				41AD08711F28D45B00354D00 /* Sources */,
 				41AD08721F28D45B00354D00 /* Frameworks */,
 				41AD08731F28D45B00354D00 /* Resources */,
+				E288E4106CD66B3793E4209C /* [CP] Embed Pods Frameworks */,
+				1A849858A0794F563BBB4D5F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -91,12 +154,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Idiots;
 				TargetAttributes = {
 					41AD08741F28D45B00354D00 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = GZN289VFL5;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -125,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41AD08831F28D45C00354D00 /* LaunchScreen.storyboard in Resources */,
+				41AD088D1F28E0B900354D00 /* Inceptionv3.mlmodel in Resources */,
 				41AD08801F28D45C00354D00 /* Assets.xcassets in Resources */,
 				41AD087E1F28D45C00354D00 /* Main.storyboard in Resources */,
 			);
@@ -132,13 +197,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1A849858A0794F563BBB4D5F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Food Snap/Pods-Food Snap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D802A8A99371A575B34E1CC3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Food Snap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E288E4106CD66B3793E4209C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Food Snap/Pods-Food Snap-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Food Snap/Pods-Food Snap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		41AD08711F28D45B00354D00 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41AD087B1F28D45C00354D00 /* ViewController.swift in Sources */,
+				4152C52A1F29E08000D1D7C4 /* Constants.swift in Sources */,
 				41AD08791F28D45C00354D00 /* AppDelegate.swift in Sources */,
+				41AD088B1F28D5DD00354D00 /* PhotoViewController.swift in Sources */,
+				41BB5B8F1F290D10007E1448 /* NutritionixAPI.swift in Sources */,
+				41BB5B8B1F28F6A2007E1448 /* Inceptionv3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,7 +296,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -182,7 +306,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -224,7 +352,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -232,7 +362,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -259,6 +393,7 @@
 		};
 		41AD08881F28D45C00354D00 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DC1703E033D11080F2B20DF /* Pods-Food Snap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GZN289VFL5;
@@ -266,12 +401,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Food-Snap";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
 		41AD08891F28D45C00354D00 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE81446138376EC673E47335 /* Pods-Food Snap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GZN289VFL5;
@@ -279,7 +416,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Food-Snap";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -302,6 +440,7 @@
 				41AD08891F28D45C00354D00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
