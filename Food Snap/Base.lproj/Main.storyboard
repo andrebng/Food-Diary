@@ -19,81 +19,6 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Photo View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="PhotoViewController" customModule="Food_Snap" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lNw-LA-aZj">
-                                <rect key="frame" x="38" y="160" width="244" height="264"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="264" id="S2N-Cr-kdR"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFC-AN-dMU">
-                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="hBh-ts-JL0"/>
-                                </constraints>
-                                <state key="normal" title="Nutritions"/>
-                                <connections>
-                                    <action selector="showNutritions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hvr-WN-gFG"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4f7-vV-z3d">
-                                <rect key="frame" x="16" y="447" width="286" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="lj2-E5-rEH"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="lNw-LA-aZj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="22" id="CK9-Mp-N8L"/>
-                            <constraint firstItem="lNw-LA-aZj" firstAttribute="centerX" secondItem="SFC-AN-dMU" secondAttribute="centerX" id="DVw-YA-OUo"/>
-                            <constraint firstItem="SFC-AN-dMU" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Gjc-Oi-6mR"/>
-                            <constraint firstItem="lNw-LA-aZj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="76" id="S1L-vy-nJn"/>
-                            <constraint firstItem="SFC-AN-dMU" firstAttribute="top" secondItem="4f7-vV-z3d" secondAttribute="bottom" constant="50" id="Vi0-Dd-bQ9"/>
-                            <constraint firstItem="4f7-vV-z3d" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="XHZ-9j-Xgf"/>
-                            <constraint firstAttribute="trailing" secondItem="SFC-AN-dMU" secondAttribute="trailing" id="hnp-aG-fc1"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="4f7-vV-z3d" secondAttribute="trailing" constant="2" id="knR-eB-1SY"/>
-                            <constraint firstItem="SFC-AN-dMU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vc5-Ei-dD7"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="9Mb-TR-AlE">
-                        <barButtonItem key="leftBarButtonItem" systemItem="camera" id="MwE-xW-sSA">
-                            <connections>
-                                <action selector="cameraClicked:" destination="BYZ-38-t0r" id="BkM-ZT-ABg"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Library" id="UTe-qJ-8K8">
-                            <connections>
-                                <action selector="libraryClicked:" destination="BYZ-38-t0r" id="XB6-du-AwM"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="cameraButton" destination="MwE-xW-sSA" id="BxC-5N-lg5"/>
-                        <outlet property="classifier" destination="4f7-vV-z3d" id="lzM-uX-dEZ"/>
-                        <outlet property="imageView" destination="lNw-LA-aZj" id="oI4-jp-5yZ"/>
-                        <outlet property="libraryButton" destination="UTe-qJ-8K8" id="mIQ-f6-POY"/>
-                        <segue destination="mqk-Pt-zTI" kind="show" identifier="FoodDetailSegue" id="7T6-nj-zYL"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1076" y="138.98050974512745"/>
-        </scene>
         <!--Diary View Controller-->
         <scene sceneID="PGj-rM-bTa">
             <objects>
@@ -441,7 +366,7 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGB-lP-ydv">
-                                <rect key="frame" x="220" y="160" width="60" height="60"/>
+                                <rect key="frame" x="220" y="120" width="60" height="60"/>
                                 <color key="backgroundColor" red="0.42745098039215684" green="0.74901960784313726" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="zlt-s6-ghF"/>
@@ -470,7 +395,7 @@
                             <constraint firstItem="bQN-VV-HPg" firstAttribute="leading" secondItem="hjo-IJ-2Wu" secondAttribute="leading" id="mbr-RN-NQb"/>
                             <constraint firstItem="3Er-Qc-wbj" firstAttribute="leading" secondItem="hjo-IJ-2Wu" secondAttribute="leading" id="o4n-zT-R5Y"/>
                             <constraint firstItem="3Er-Qc-wbj" firstAttribute="top" secondItem="hjo-IJ-2Wu" secondAttribute="top" id="pMe-wL-l9B"/>
-                            <constraint firstItem="QGB-lP-ydv" firstAttribute="top" secondItem="bQN-VV-HPg" secondAttribute="top" constant="-20" id="uVL-yr-s7u"/>
+                            <constraint firstItem="QGB-lP-ydv" firstAttribute="top" secondItem="bQN-VV-HPg" secondAttribute="top" constant="-60" id="uVL-yr-s7u"/>
                             <constraint firstItem="Jve-Kw-WL3" firstAttribute="top" secondItem="LOH-FD-XYd" secondAttribute="bottom" id="yCD-Q4-pGp"/>
                         </constraints>
                     </view>
@@ -812,24 +737,6 @@
             <point key="canvasLocation" x="2468" y="138"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="1Zy-jc-F2g">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oUj-qu-evl" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="G76-vb-R0x">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="PXl-26-cFm"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Rj8-NQ-nXt" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="206" y="139"/>
-        </scene>
-        <!--Navigation Controller-->
         <scene sceneID="Yml-y0-xfH">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8yD-Pw-fcD" sceneMemberID="viewController">
@@ -852,7 +759,4 @@
         <image name="Camera-50.png" width="50" height="50"/>
         <image name="Food.jpg" width="2000" height="1999"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="17K-Q4-tYY"/>
-    </inferredMetricsTieBreakers>
 </document>
