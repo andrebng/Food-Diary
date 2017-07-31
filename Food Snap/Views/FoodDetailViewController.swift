@@ -19,7 +19,8 @@
 //LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //SOFTWARE.
-//
+
+
 //  FoodDetailViewController.swift
 //  Food Snap
 //
@@ -34,6 +35,7 @@ class FoodDetailViewController : UIViewController {
     
     var delegate : AddToLibraryDelegate?
     
+    // Outlets
     @IBOutlet weak var tableView: UITableView!
     
     // Array of food items
@@ -45,8 +47,6 @@ class FoodDetailViewController : UIViewController {
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.separatorColor = UIColor.clear
-        
-        puts("Foodlist: \(self.foodList)")
     }
     
     override func didReceiveMemoryWarning() {
@@ -56,6 +56,7 @@ class FoodDetailViewController : UIViewController {
     
 }
 
+//MARK: UITableViewDelegate, UITableViewDatasource
 extension FoodDetailViewController : UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -88,6 +89,7 @@ extension FoodDetailViewController : UITableViewDelegate, UITableViewDataSource 
     
 }
 
+//MARK: CardCellDelegate
 extension FoodDetailViewController : CardCellDelegate {
     
     func chooseNutrition(foodName: String, calories: Float, fat: String) {

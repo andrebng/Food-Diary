@@ -19,7 +19,8 @@
 //LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //SOFTWARE.
-//
+
+
 //  AddToLibraryViewController.swift
 //  Food Snap
 //
@@ -31,6 +32,7 @@ import Foundation
 import UIKit
 import CoreML
 
+//UNSUED: XOR
 precedencegroup BooleanPrecedence { associativity: left }
 infix operator ^^ : BooleanPrecedence
 
@@ -38,6 +40,7 @@ func ^^(lhs: Bool, rhs: Bool) -> Bool {
     return lhs != rhs
 }
 
+//MARK: AddToLibraryDelegate Protocol
 protocol AddToLibraryDelegate {
     func setNutritionData(foodName: String, calories: Float, fat: String)
 }
@@ -59,6 +62,7 @@ class AddToLibraryViewController : UIViewController, UINavigationControllerDeleg
     
     @IBOutlet weak var ctaButton: UIButton!
     
+    //MARK: Vars
     var diaryDelegate : DiaryDelegate?
     var delegate : AddToLibraryDelegate?
     
@@ -102,6 +106,7 @@ class AddToLibraryViewController : UIViewController, UINavigationControllerDeleg
         self.view.endEditing(true) //This will hide the keyboard
     }
     
+    //MARK: UI Setup
     func setupUI() {
         
         // Rounden corners on top
@@ -197,7 +202,7 @@ class AddToLibraryViewController : UIViewController, UINavigationControllerDeleg
     
 }
 
-//MARK: AddToLIbraryDelegate
+//MARK: AddToLibraryDelegate
 @available(iOS 11.0, *)
 extension AddToLibraryViewController : AddToLibraryDelegate {
     

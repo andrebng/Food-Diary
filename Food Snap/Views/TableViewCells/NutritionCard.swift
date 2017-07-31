@@ -19,7 +19,8 @@
 //LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //SOFTWARE.
-//
+
+
 //  NutritionCard.swift
 //  Food Snap
 //
@@ -32,6 +33,7 @@ import UIKit
 
 class NutritionCard : UITableViewCell {
     
+    //MARK: Outlets
     @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var foodImage: UIImageView!
     @IBOutlet weak var foodLetterLabel: UILabel!
@@ -52,6 +54,7 @@ class NutritionCard : UITableViewCell {
         self.cardSetup()
     }
     
+    //MARK: UI-Setup
     func cardSetup() {
         
         self.foodNameLabel.adjustsFontSizeToFitWidth = true

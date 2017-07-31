@@ -19,7 +19,8 @@
 //LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //SOFTWARE.
-//
+
+
 //  CardCell.swift
 //  Food Snap
 //
@@ -30,6 +31,7 @@
 import Foundation
 import UIKit
 
+//MARK: CardCellDelegate Protocol
 protocol CardCellDelegate {
     
     func chooseNutrition(foodName: String, calories: Float, fat: String)
@@ -40,7 +42,7 @@ class CardCell : UITableViewCell {
     
     var delegate : CardCellDelegate?
     
-    // Outlets
+    //MARK: Outlets
     @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var cardTitle: UILabel!
     @IBOutlet weak var caloriesLabel: UILabel!
@@ -51,6 +53,7 @@ class CardCell : UITableViewCell {
         self.cardSetup()
     }
     
+    //MARK: UI-Setup
     func cardSetup() {
         
         self.cardTitle.adjustsFontSizeToFitWidth = true
@@ -69,6 +72,7 @@ class CardCell : UITableViewCell {
         self.backgroundColor = UIColor.init(red: 9, green: 9, blue: 9, alpha: 1)
     }
     
+    //MARK: Actions
     @IBAction func clickedButton(_ sender: Any) {
         self.delegate?.chooseNutrition(foodName: self.cardTitle.text!, calories: Float(self.caloriesLabel.text!)!, fat: self.fatLabel.text!)
     }

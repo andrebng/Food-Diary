@@ -19,7 +19,8 @@
 //LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //SOFTWARE.
-//
+
+
 //  DiaryViewController.swift
 //  Food Snap
 //
@@ -92,6 +93,7 @@ class DiaryViewController : UIViewController {
     
     //MARK: Helper Functions
     
+    /// Updates calories based on table items
     func updateCaloriesADay() {
         
         var caloriesADay = 0.0
@@ -117,7 +119,6 @@ class DiaryViewController : UIViewController {
     }
     
     //MARK: UI Setup
-    
     func setupBackground() {
         
         // Rounden corners on top

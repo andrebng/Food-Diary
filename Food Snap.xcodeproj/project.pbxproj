@@ -20,7 +20,6 @@
 		41AD087E1F28D45C00354D00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41AD087C1F28D45C00354D00 /* Main.storyboard */; };
 		41AD08801F28D45C00354D00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41AD087F1F28D45C00354D00 /* Assets.xcassets */; };
 		41AD08831F28D45C00354D00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41AD08811F28D45C00354D00 /* LaunchScreen.storyboard */; };
-		41AD088D1F28E0B900354D00 /* Inceptionv3.mlmodel in Resources */ = {isa = PBXBuildFile; fileRef = 41AD088C1F28E0B900354D00 /* Inceptionv3.mlmodel */; };
 		41BB5B8B1F28F6A2007E1448 /* Inceptionv3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BB5B8A1F28F6A2007E1448 /* Inceptionv3.swift */; };
 		41BB5B8F1F290D10007E1448 /* NutritionixAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BB5B8E1F290D10007E1448 /* NutritionixAPI.swift */; };
 /* End PBXBuildFile section */
@@ -40,7 +39,6 @@
 		41AD087F1F28D45C00354D00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41AD08821F28D45C00354D00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41AD08841F28D45C00354D00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		41AD088C1F28E0B900354D00 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 		41BB5B8A1F28F6A2007E1448 /* Inceptionv3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inceptionv3.swift; sourceTree = "<group>"; };
 		41BB5B8E1F290D10007E1448 /* NutritionixAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionixAPI.swift; sourceTree = "<group>"; };
 		5DC1703E033D11080F2B20DF /* Pods-Food Snap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food Snap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Food Snap/Pods-Food Snap.debug.xcconfig"; sourceTree = "<group>"; };
@@ -109,7 +107,6 @@
 		41AD086C1F28D45B00354D00 = {
 			isa = PBXGroup;
 			children = (
-				41AD088C1F28E0B900354D00 /* Inceptionv3.mlmodel */,
 				41AD08771F28D45C00354D00 /* Food Snap */,
 				41AD08761F28D45C00354D00 /* Products */,
 				804D41F7BF1A6CC325B62462 /* Frameworks */,
@@ -239,7 +236,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				41AD08831F28D45C00354D00 /* LaunchScreen.storyboard in Resources */,
-				41AD088D1F28E0B900354D00 /* Inceptionv3.mlmodel in Resources */,
 				418B499E1F2B931F0061860E /* Food.jpg in Resources */,
 				41AD08801F28D45C00354D00 /* Assets.xcassets in Resources */,
 				41AD087E1F28D45C00354D00 /* Main.storyboard in Resources */,

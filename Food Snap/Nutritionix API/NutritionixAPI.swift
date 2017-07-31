@@ -19,7 +19,8 @@
 //LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //SOFTWARE.
-//
+
+
 //  NutritionixAPI.swift
 //  Food Snap
 //
@@ -32,10 +33,15 @@ import Alamofire
 
 class NutritionixAPI : NSObject {
     
+    
+    /// Returns nutrition data based on food name
+    ///
+    /// - Parameters:
+    ///   - foodName: name of food as string
+    ///   - completion: completion handler once api returned data
     static func nutritionInfo(foodName: String, completion: @escaping (_ success: Bool, _ result: NSArray) -> Void) {
         
         let url = "https://api.nutritionix.com/v1_1/search/\(foodName)?fields=item_name%2Citem_id%2Cbrand_name%2Cnf_calories%2Cnf_total_fat&appId=\(Constants.APPLICATION_ID)&appKey=\(Constants.APPLICATION_KEY)"
-//        let headers = ["sth": "sth else"]
         
         Alamofire.request(url, method: .get, encoding: JSONEncoding.default, headers: nil).validate().responseJSON { (response) in
             
