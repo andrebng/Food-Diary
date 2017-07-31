@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1F150246A4DA387424F34388 /* Pods_Food_Snap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C1F4CC0E4B24950F56BBFB /* Pods_Food_Snap.framework */; };
+		410A57601F2F643A0071DBBC /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 410A575F1F2F643A0071DBBC /* Inceptionv3.mlmodel */; };
+		410A57621F2F64EC0071DBBC /* Inceptionv3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410A57611F2F64EC0071DBBC /* Inceptionv3.swift */; };
 		41232F261F2DE8A9003ACE6E /* NutritionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41232F251F2DE8A9003ACE6E /* NutritionCard.swift */; };
 		41232F281F2E1E3E003ACE6E /* AddToLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41232F271F2E1E3E003ACE6E /* AddToLibraryViewController.swift */; };
 		4152C52A1F29E08000D1D7C4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152C5291F29E08000D1D7C4 /* Constants.swift */; };
@@ -20,11 +22,12 @@
 		41AD087E1F28D45C00354D00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41AD087C1F28D45C00354D00 /* Main.storyboard */; };
 		41AD08801F28D45C00354D00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41AD087F1F28D45C00354D00 /* Assets.xcassets */; };
 		41AD08831F28D45C00354D00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41AD08811F28D45C00354D00 /* LaunchScreen.storyboard */; };
-		41BB5B8B1F28F6A2007E1448 /* Inceptionv3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BB5B8A1F28F6A2007E1448 /* Inceptionv3.swift */; };
 		41BB5B8F1F290D10007E1448 /* NutritionixAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BB5B8E1F290D10007E1448 /* NutritionixAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		410A575F1F2F643A0071DBBC /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		410A57611F2F64EC0071DBBC /* Inceptionv3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inceptionv3.swift; sourceTree = "<group>"; };
 		41232F251F2DE8A9003ACE6E /* NutritionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionCard.swift; sourceTree = "<group>"; };
 		41232F271F2E1E3E003ACE6E /* AddToLibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToLibraryViewController.swift; sourceTree = "<group>"; };
 		4152C5291F29E08000D1D7C4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -39,7 +42,6 @@
 		41AD087F1F28D45C00354D00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41AD08821F28D45C00354D00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41AD08841F28D45C00354D00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		41BB5B8A1F28F6A2007E1448 /* Inceptionv3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inceptionv3.swift; sourceTree = "<group>"; };
 		41BB5B8E1F290D10007E1448 /* NutritionixAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionixAPI.swift; sourceTree = "<group>"; };
 		5DC1703E033D11080F2B20DF /* Pods-Food Snap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food Snap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Food Snap/Pods-Food Snap.debug.xcconfig"; sourceTree = "<group>"; };
 		BE81446138376EC673E47335 /* Pods-Food Snap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food Snap.release.xcconfig"; path = "Pods/Target Support Files/Pods-Food Snap/Pods-Food Snap.release.xcconfig"; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 		41AD086C1F28D45B00354D00 = {
 			isa = PBXGroup;
 			children = (
+				410A575F1F2F643A0071DBBC /* Inceptionv3.mlmodel */,
 				41AD08771F28D45C00354D00 /* Food Snap */,
 				41AD08761F28D45C00354D00 /* Products */,
 				804D41F7BF1A6CC325B62462 /* Frameworks */,
@@ -142,7 +145,7 @@
 		41BB5B8C1F28F6AF007E1448 /* ML Model */ = {
 			isa = PBXGroup;
 			children = (
-				41BB5B8A1F28F6A2007E1448 /* Inceptionv3.swift */,
+				410A57611F2F64EC0071DBBC /* Inceptionv3.swift */,
 			);
 			path = "ML Model";
 			sourceTree = "<group>";
@@ -309,9 +312,10 @@
 				4152C52A1F29E08000D1D7C4 /* Constants.swift in Sources */,
 				415CCDA01F2A095D0032040C /* FoodDetailViewController.swift in Sources */,
 				41AD08791F28D45C00354D00 /* AppDelegate.swift in Sources */,
+				410A57601F2F643A0071DBBC /* Inceptionv3.mlmodel in Sources */,
 				418B499A1F2B86210061860E /* DiaryViewController.swift in Sources */,
+				410A57621F2F64EC0071DBBC /* Inceptionv3.swift in Sources */,
 				41BB5B8F1F290D10007E1448 /* NutritionixAPI.swift in Sources */,
-				41BB5B8B1F28F6A2007E1448 /* Inceptionv3.swift in Sources */,
 				4152C52E1F2A033D00D1D7C4 /* CardCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

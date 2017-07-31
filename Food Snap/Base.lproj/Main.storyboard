@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -645,7 +644,7 @@
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2AW-31-aNb">
                                                             <rect key="frame" x="0.0" y="160" width="300" height="30"/>
-                                                            <color key="backgroundColor" red="0.18823529411764706" green="0.10588235294117647" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="backgroundColor" red="0.42745098040000001" green="0.74901960779999999" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="30" id="wQq-fT-mDI"/>
                                                             </constraints>
