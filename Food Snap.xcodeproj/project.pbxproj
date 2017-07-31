@@ -8,7 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		1F150246A4DA387424F34388 /* Pods_Food_Snap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C1F4CC0E4B24950F56BBFB /* Pods_Food_Snap.framework */; };
+		41232F261F2DE8A9003ACE6E /* NutritionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41232F251F2DE8A9003ACE6E /* NutritionCard.swift */; };
+		41232F281F2E1E3E003ACE6E /* AddToLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41232F271F2E1E3E003ACE6E /* AddToLibraryViewController.swift */; };
 		4152C52A1F29E08000D1D7C4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152C5291F29E08000D1D7C4 /* Constants.swift */; };
+		4152C52E1F2A033D00D1D7C4 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152C52D1F2A033D00D1D7C4 /* CardCell.swift */; };
+		415CCDA01F2A095D0032040C /* FoodDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415CCD9F1F2A095D0032040C /* FoodDetailViewController.swift */; };
+		41712B951F2E3D82008D8E1D /* Camera-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 41712B941F2E3D81008D8E1D /* Camera-50.png */; };
+		418B499A1F2B86210061860E /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B49991F2B86210061860E /* DiaryViewController.swift */; };
+		418B499E1F2B931F0061860E /* Food.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 418B499D1F2B931E0061860E /* Food.jpg */; };
 		41AD08791F28D45C00354D00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD08781F28D45C00354D00 /* AppDelegate.swift */; };
 		41AD087E1F28D45C00354D00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41AD087C1F28D45C00354D00 /* Main.storyboard */; };
 		41AD08801F28D45C00354D00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41AD087F1F28D45C00354D00 /* Assets.xcassets */; };
@@ -20,7 +27,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41232F251F2DE8A9003ACE6E /* NutritionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionCard.swift; sourceTree = "<group>"; };
+		41232F271F2E1E3E003ACE6E /* AddToLibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToLibraryViewController.swift; sourceTree = "<group>"; };
 		4152C5291F29E08000D1D7C4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4152C52D1F2A033D00D1D7C4 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		415CCD9F1F2A095D0032040C /* FoodDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailViewController.swift; sourceTree = "<group>"; };
+		41712B941F2E3D81008D8E1D /* Camera-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Camera-50.png"; sourceTree = "<group>"; };
+		418B49991F2B86210061860E /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
+		418B499D1F2B931E0061860E /* Food.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Food.jpg; sourceTree = "<group>"; };
 		41AD08751F28D45C00354D00 /* Food Snap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food Snap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41AD08781F28D45C00354D00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41AD087D1F28D45C00354D00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -57,6 +71,44 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		4152C52B1F2A031E00D1D7C4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				41AD088A1F28D5DD00354D00 /* PhotoViewController.swift */,
+				415CCD9F1F2A095D0032040C /* FoodDetailViewController.swift */,
+				418B49991F2B86210061860E /* DiaryViewController.swift */,
+				41232F271F2E1E3E003ACE6E /* AddToLibraryViewController.swift */,
+				4152C52C1F2A032B00D1D7C4 /* TableViewCells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4152C52C1F2A032B00D1D7C4 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				4152C52D1F2A033D00D1D7C4 /* CardCell.swift */,
+				41232F251F2DE8A9003ACE6E /* NutritionCard.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		418B499B1F2B930C0061860E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				418B499C1F2B93130061860E /* img */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		418B499C1F2B93130061860E /* img */ = {
+			isa = PBXGroup;
+			children = (
+				41712B941F2E3D81008D8E1D /* Camera-50.png */,
+				418B499D1F2B931E0061860E /* Food.jpg */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
 		41AD086C1F28D45B00354D00 = {
 			isa = PBXGroup;
 			children = (
@@ -79,13 +131,14 @@
 		41AD08771F28D45C00354D00 /* Food Snap */ = {
 			isa = PBXGroup;
 			children = (
-				41AD08811F28D45C00354D00 /* LaunchScreen.storyboard */,
-				41AD087C1F28D45C00354D00 /* Main.storyboard */,
+				418B499B1F2B930C0061860E /* Assets */,
 				41AD08781F28D45C00354D00 /* AppDelegate.swift */,
-				41AD088A1F28D5DD00354D00 /* PhotoViewController.swift */,
+				4152C52B1F2A031E00D1D7C4 /* Views */,
+				41C61EBE1F29D6C600284858 /* Constants */,
 				41BB5B8D1F290CF9007E1448 /* Nutritionix API */,
 				41BB5B8C1F28F6AF007E1448 /* ML Model */,
-				41C61EBE1F29D6C600284858 /* Constants */,
+				41AD08811F28D45C00354D00 /* LaunchScreen.storyboard */,
+				41AD087C1F28D45C00354D00 /* Main.storyboard */,
 				41AD087F1F28D45C00354D00 /* Assets.xcassets */,
 				41AD08841F28D45C00354D00 /* Info.plist */,
 			);
@@ -190,8 +243,10 @@
 			files = (
 				41AD08831F28D45C00354D00 /* LaunchScreen.storyboard in Resources */,
 				41AD088D1F28E0B900354D00 /* Inceptionv3.mlmodel in Resources */,
+				418B499E1F2B931F0061860E /* Food.jpg in Resources */,
 				41AD08801F28D45C00354D00 /* Assets.xcassets in Resources */,
 				41AD087E1F28D45C00354D00 /* Main.storyboard in Resources */,
+				41712B951F2E3D82008D8E1D /* Camera-50.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,11 +311,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41232F281F2E1E3E003ACE6E /* AddToLibraryViewController.swift in Sources */,
+				41232F261F2DE8A9003ACE6E /* NutritionCard.swift in Sources */,
 				4152C52A1F29E08000D1D7C4 /* Constants.swift in Sources */,
+				415CCDA01F2A095D0032040C /* FoodDetailViewController.swift in Sources */,
 				41AD08791F28D45C00354D00 /* AppDelegate.swift in Sources */,
 				41AD088B1F28D5DD00354D00 /* PhotoViewController.swift in Sources */,
+				418B499A1F2B86210061860E /* DiaryViewController.swift in Sources */,
 				41BB5B8F1F290D10007E1448 /* NutritionixAPI.swift in Sources */,
 				41BB5B8B1F28F6A2007E1448 /* Inceptionv3.swift in Sources */,
+				4152C52E1F2A033D00D1D7C4 /* CardCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

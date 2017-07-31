@@ -11,7 +11,6 @@ import UIKit
 import CoreML
 
 @available(iOS 11.0, *)
-@available(iOS 11.0, *)
 class PhotoViewController : UIViewController, UINavigationControllerDelegate {
     
     @IBOutlet weak var cameraButton: UIBarButtonItem!
@@ -20,6 +19,8 @@ class PhotoViewController : UIViewController, UINavigationControllerDelegate {
     @IBOutlet weak var classifier: UILabel!
     
     var model: Inceptionv3!
+    
+    var foodList : NSArray = []
     
     override func viewWillAppear(_ animated: Bool) {
         model = Inceptionv3()
@@ -35,7 +36,18 @@ class PhotoViewController : UIViewController, UINavigationControllerDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "FoodDetailSegue" {
+            let vc = segue.destination as! FoodDetailViewController
+            vc.foodList = self.foodList
+        }
+    }
+    
 //MARK: Action Methods
+    
+    @IBAction func showNutritions(_ sender: Any) {
+        self.performSegue(withIdentifier: "FoodDetailSegue", sender: self)
+    }
     
     @IBAction func cameraClicked(_ sender: Any) {
         
@@ -110,10 +122,17 @@ extension PhotoViewController: UIImagePickerControllerDelegate {
             return
         }
         
-        puts("Sets: \(prediction.classLabelProbs)")
         let firstItem = prediction.classLabel.components(separatedBy: ",")[0]
         classifier.text = "\(firstItem)."
         
-        NutritionixAPI.nutritionInfo(foodName: classifier.text!)
+        NutritionixAPI.nutritionInfo(foodName: classifier.text!) { (success, result) in
+            if success {
+                self.foodList = result
+                puts("Results retrieved")
+            }
+            else {
+                puts("No results")
+            }
+        }
     }
 }
