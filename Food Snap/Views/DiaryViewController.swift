@@ -25,7 +25,7 @@
 //  Food Snap
 //
 //  Created by Andre Nguyen on 7/28/17.
-//  Copyright © 2017 Idiots. All rights reserved.
+//  Copyright © 2017 Andre Nguyen. All rights reserved.
 //
 
 import Foundation
