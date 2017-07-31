@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1F150246A4DA387424F34388 /* Pods_Food_Snap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C1F4CC0E4B24950F56BBFB /* Pods_Food_Snap.framework */; };
 		410A57601F2F643A0071DBBC /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 410A575F1F2F643A0071DBBC /* Inceptionv3.mlmodel */; };
-		410A57621F2F64EC0071DBBC /* Inceptionv3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410A57611F2F64EC0071DBBC /* Inceptionv3.swift */; };
 		41232F261F2DE8A9003ACE6E /* NutritionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41232F251F2DE8A9003ACE6E /* NutritionCard.swift */; };
 		41232F281F2E1E3E003ACE6E /* AddToLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41232F271F2E1E3E003ACE6E /* AddToLibraryViewController.swift */; };
 		4152C52A1F29E08000D1D7C4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152C5291F29E08000D1D7C4 /* Constants.swift */; };
@@ -27,7 +26,6 @@
 
 /* Begin PBXFileReference section */
 		410A575F1F2F643A0071DBBC /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
-		410A57611F2F64EC0071DBBC /* Inceptionv3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inceptionv3.swift; sourceTree = "<group>"; };
 		41232F251F2DE8A9003ACE6E /* NutritionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionCard.swift; sourceTree = "<group>"; };
 		41232F271F2E1E3E003ACE6E /* AddToLibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToLibraryViewController.swift; sourceTree = "<group>"; };
 		4152C5291F29E08000D1D7C4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -145,7 +143,6 @@
 		41BB5B8C1F28F6AF007E1448 /* ML Model */ = {
 			isa = PBXGroup;
 			children = (
-				410A57611F2F64EC0071DBBC /* Inceptionv3.swift */,
 			);
 			path = "ML Model";
 			sourceTree = "<group>";
@@ -314,7 +311,6 @@
 				41AD08791F28D45C00354D00 /* AppDelegate.swift in Sources */,
 				410A57601F2F643A0071DBBC /* Inceptionv3.mlmodel in Sources */,
 				418B499A1F2B86210061860E /* DiaryViewController.swift in Sources */,
-				410A57621F2F64EC0071DBBC /* Inceptionv3.swift in Sources */,
 				41BB5B8F1F290D10007E1448 /* NutritionixAPI.swift in Sources */,
 				4152C52E1F2A033D00D1D7C4 /* CardCell.swift in Sources */,
 			);
