@@ -18,6 +18,8 @@ Run `pod install` to install Alamofire.
 
 ## Roadmap
 
+- Apply MVVM 
+- Apply Data Binding
 - Persistent storage of diary entries
 - Change weight and calories goal
 
