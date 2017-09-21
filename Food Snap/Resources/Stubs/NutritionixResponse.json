@@ -1,0 +1,320 @@
+{
+    "_id" = 23cb683813b3ffe4fafedecf;
+    "_index" = "f762ef22-e660-434f-9071-a10ea6691c27";
+    "_score" = "3.7377315";
+    "_type" = item;
+    fields =             {
+        "brand_name" = IHOP;
+        "item_id" = 23cb683813b3ffe4fafedecf;
+        "item_name" = Hamburger;
+        "nf_calories" = 620;
+        "nf_serving_size_qty" = 1;
+        "nf_serving_size_unit" = serving;
+        "nf_total_fat" = 37;
+    };
+},
+{
+    "_id" = 5687b17f5cf64c2154d9c4d2;
+    "_index" = "f762ef22-e660-434f-9071-a10ea6691c27";
+    "_score" = "3.662711";
+    "_type" = item;
+    fields =             {
+        "brand_name" = "Roundy's";
+        "item_id" = 5687b17f5cf64c2154d9c4d2;
+        "item_name" = Hamburger;
+        "nf_calories" = 110;
+        "nf_serving_size_qty" = 1;
+        "nf_serving_size_unit" = serving;
+        "nf_total_fat" = "1.5";
+    };
+},
+{
+    "_id" = 516d9a42e3afed1038d007dd;
+    "_index" = "f762ef22-e660-434f-9071-a10ea6691c27";
+    "_score" = "3.662711";
+    "_type" = item;
+    fields =             {
+        "brand_name" = "Tubby's";
+        "item_id" = 516d9a42e3afed1038d007dd;
+        "item_name" = Hamburger;
+        "nf_calories" = 270;
+        "nf_serving_size_qty" = 1;
+        "nf_serving_size_unit" = serving;
+        "nf_total_fat" = 8;
+    };
+},
+{
+    "_id" = ae49759913641b6870beb1e5;
+    "_index" = "f762ef22-e660-434f-9071-a10ea6691c27";
+    "_score" = "3.6132193";
+    "_type" = item;
+    fields =             {
+        "brand_name" = "Jimboys Tacos";
+        "item_id" = ae49759913641b6870beb1e5;
+        "item_name" = Hamburger;
+        "nf_calories" = 470;
+        "nf_serving_size_qty" = 1;
+        "nf_serving_size_unit" = serving;
+        "nf_total_fat" = 22;
+    };
+},
+{
+    "_id" = 521b95cb4a56d006d578b99a;
+    "_index" = "f762ef22-e660-434f-9071-a10ea6691c27";
+    "_score" = "3.6132193";
+    "_type" = item;
+    fields =             {
+        "brand_name" = "Five Guys";
+        "item_id" = 521b95cb4a56d006d578b99a;
+        "item_name" = Hamburger;
+        "nf_calories" = 700;
+        "nf_serving_size_qty" = 1;
+        "nf_serving_size_unit" = serving;
+        "nf_total_fat" = 43;
+    };
+},
+{
+    "_id" = 513fc999927da70408005c86;
+    "_index" = "f762ef22-e660-434f-9071-a10ea6691c27";
+    "_score" = "3.6132193";
+    "_type" = item;
+    fields =             {
+        "brand_name" = "A&W Restaurants";
+        "item_id" = 513fc999927da70408005c86;
+        "item_name" = Hamburger;
+        "nf_calories" = 380;
+        "nf_serving_size_qty" = 1;
+        "nf_serving_size_unit" = serving;
+        "nf_total_fat" = 19;
+    };
+},
+{
+    "_id" = 513fc9cb673c4fbc260053cf;
+    "_index" = "f762ef22-e660-434f-9071-a10ea6691c27";
+    "_score" = "3.6132193";
+    "_type" = item;
+    fields =             {
+        "brand_name" = "The Varsity";
+        "item_id" = 513fc9cb673c4fbc260053cf;
+        "item_name" = Hamburger;
+        "nf_calories" = 200;
+        "nf_serving_size_qty" = 1;
+        "nf_serving_size_unit" = serving;
+        "nf_total_fat" = 9;
+    };
+},
+{
+    "_id" = 513fc9e73fe3ffd4030010e5;
+    "_index" = "f762ef22-e660-434f-9071-a10ea6691c27";
+    "_score" = "3.560236";
+    "_type" = item;
+    fields =             {
+        "brand_name" = "McDonald's";
+        "item_id" = 513fc9e73fe3ffd4030010e5;
+        "item_name" = Hamburger;
+        "nf_calories" = 250;
+        "nf_serving_size_qty" = 1;
+        "nf_serving_size_unit" = serving;
+        "nf_total_fat" = 8;
+    };
+},
+{
+    "_id" = 54eb7eec9c0b588854154330;
+    "_index" = "f762ef22-e660-434f-9071-a10ea6691c27";
+    "_score" = "3.560236";
+    "_type" = item;
+    fields =             {
+        "brand_name" = Nutrisystem;
+        "item_id" = 54eb7eec9c0b588854154330;
+        "item_name" = Hamburger;
+        "nf_calories" = 240;
+        "nf_serving_size_qty" = 1;
+        "nf_serving_size_unit" = serving;
+        "nf_total_fat" = 8;
+    };
+},
+{
+    "_id" = 513fc992927da704080005da;
+    "_index" = "f762ef22-e660-434f-9071-a10ea6691c27";
+    "_score" = "3.550963";
+    "_type" = item;
+    fields =             {
+        "brand_name" = "Jack in the Box";
+        "item_id" = 513fc992927da704080005da;
+        "item_name" = Hamburger;
+        "nf_calories" = 340;
+        "nf_serving_size_qty" = 1;
+        "nf_serving_size_unit" = serving;
+        "nf_total_fat" = 18;
+    };
+}
+);
+"max_score" = "3.7377315";
+"total_hits" = 1895;
+}
+Response.response: <NSHTTPURLResponse: 0x60400023aa80> { URL: https://api.nutritionix.com/v1_1/search/Hamburger?fields=item_name%2Citem_id%2Cbrand_name%2Cnf_calories%2Cnf_total_fat&appId=772d3cd0&appKey=254a559df3c98f4b1a552e9564aa0595 } { status code: 200, headers {
+    "Access-Control-Allow-Headers" = "Content-Type, X-Requested-With, X-APP-ID, X-APP-KEY";
+    "Access-Control-Allow-Methods" = "GET, PUT, POST, DELETE, OPTIONS";
+    "Access-Control-Allow-Origin" = "*";
+    Connection = "keep-alive";
+    "Content-Encoding" = gzip;
+    "Content-Type" = "application/json; charset=utf-8";
+    Date = "Tue, 19 Sep 2017 16:54:08 GMT";
+    Server = "nginx/1.6.2 + Phusion Passenger";
+    Status = "200 OK";
+    "Transfer-Encoding" = Identity;
+    "X-Powered-By" = "Express, Phusion Passenger";
+} }
+Response.value: SUCCESS
+Optional<Any>
+Resuts-Array: (
+               {
+               "_id" = 23cb683813b3ffe4fafedecf;
+               "_index" = "f762ef22-e660-434f-9071-a10ea6691c27";
+               "_score" = "3.7377315";
+               "_type" = item;
+               fields =         {
+               "brand_name" = IHOP;
+               "item_id" = 23cb683813b3ffe4fafedecf;
+               "item_name" = Hamburger;
+               "nf_calories" = 620;
+               "nf_serving_size_qty" = 1;
+               "nf_serving_size_unit" = serving;
+               "nf_total_fat" = 37;
+               };
+               },
+               {
+               "_id" = 5687b17f5cf64c2154d9c4d2;
+               "_index" = "f762ef22-e660-434f-9071-a10ea6691c27";
+               "_score" = "3.662711";
+               "_type" = item;
+               fields =         {
+               "brand_name" = "Roundy's";
+               "item_id" = 5687b17f5cf64c2154d9c4d2;
+               "item_name" = Hamburger;
+               "nf_calories" = 110;
+               "nf_serving_size_qty" = 1;
+               "nf_serving_size_unit" = serving;
+               "nf_total_fat" = "1.5";
+               };
+               },
+               {
+               "_id" = 516d9a42e3afed1038d007dd;
+               "_index" = "f762ef22-e660-434f-9071-a10ea6691c27";
+               "_score" = "3.662711";
+               "_type" = item;
+               fields =         {
+               "brand_name" = "Tubby's";
+               "item_id" = 516d9a42e3afed1038d007dd;
+               "item_name" = Hamburger;
+               "nf_calories" = 270;
+               "nf_serving_size_qty" = 1;
+               "nf_serving_size_unit" = serving;
+               "nf_total_fat" = 8;
+               };
+               },
+               {
+               "_id" = ae49759913641b6870beb1e5;
+               "_index" = "f762ef22-e660-434f-9071-a10ea6691c27";
+               "_score" = "3.6132193";
+               "_type" = item;
+               fields =         {
+               "brand_name" = "Jimboys Tacos";
+               "item_id" = ae49759913641b6870beb1e5;
+               "item_name" = Hamburger;
+               "nf_calories" = 470;
+               "nf_serving_size_qty" = 1;
+               "nf_serving_size_unit" = serving;
+               "nf_total_fat" = 22;
+               };
+               },
+               {
+               "_id" = 521b95cb4a56d006d578b99a;
+               "_index" = "f762ef22-e660-434f-9071-a10ea6691c27";
+               "_score" = "3.6132193";
+               "_type" = item;
+               fields =         {
+               "brand_name" = "Five Guys";
+               "item_id" = 521b95cb4a56d006d578b99a;
+               "item_name" = Hamburger;
+               "nf_calories" = 700;
+               "nf_serving_size_qty" = 1;
+               "nf_serving_size_unit" = serving;
+               "nf_total_fat" = 43;
+               };
+               },
+               {
+               "_id" = 513fc999927da70408005c86;
+               "_index" = "f762ef22-e660-434f-9071-a10ea6691c27";
+               "_score" = "3.6132193";
+               "_type" = item;
+               fields =         {
+               "brand_name" = "A&W Restaurants";
+               "item_id" = 513fc999927da70408005c86;
+               "item_name" = Hamburger;
+               "nf_calories" = 380;
+               "nf_serving_size_qty" = 1;
+               "nf_serving_size_unit" = serving;
+               "nf_total_fat" = 19;
+               };
+               },
+               {
+               "_id" = 513fc9cb673c4fbc260053cf;
+               "_index" = "f762ef22-e660-434f-9071-a10ea6691c27";
+               "_score" = "3.6132193";
+               "_type" = item;
+               fields =         {
+               "brand_name" = "The Varsity";
+               "item_id" = 513fc9cb673c4fbc260053cf;
+               "item_name" = Hamburger;
+               "nf_calories" = 200;
+               "nf_serving_size_qty" = 1;
+               "nf_serving_size_unit" = serving;
+               "nf_total_fat" = 9;
+               };
+               },
+               {
+               "_id" = 513fc9e73fe3ffd4030010e5;
+               "_index" = "f762ef22-e660-434f-9071-a10ea6691c27";
+               "_score" = "3.560236";
+               "_type" = item;
+               fields =         {
+               "brand_name" = "McDonald's";
+               "item_id" = 513fc9e73fe3ffd4030010e5;
+               "item_name" = Hamburger;
+               "nf_calories" = 250;
+               "nf_serving_size_qty" = 1;
+               "nf_serving_size_unit" = serving;
+               "nf_total_fat" = 8;
+               };
+               },
+               {
+               "_id" = 54eb7eec9c0b588854154330;
+               "_index" = "f762ef22-e660-434f-9071-a10ea6691c27";
+               "_score" = "3.560236";
+               "_type" = item;
+               fields =         {
+               "brand_name" = Nutrisystem;
+               "item_id" = 54eb7eec9c0b588854154330;
+               "item_name" = Hamburger;
+               "nf_calories" = 240;
+               "nf_serving_size_qty" = 1;
+               "nf_serving_size_unit" = serving;
+               "nf_total_fat" = 8;
+               };
+               },
+               {
+               "_id" = 513fc992927da704080005da;
+               "_index" = "f762ef22-e660-434f-9071-a10ea6691c27";
+               "_score" = "3.550963";
+               "_type" = item;
+               fields =         {
+               "brand_name" = "Jack in the Box";
+               "item_id" = 513fc992927da704080005da;
+               "item_name" = Hamburger;
+               "nf_calories" = 340;
+               "nf_serving_size_qty" = 1;
+               "nf_serving_size_unit" = serving;
+               "nf_total_fat" = 18;
+               };
+               }

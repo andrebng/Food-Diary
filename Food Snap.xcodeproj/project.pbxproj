@@ -9,38 +9,58 @@
 /* Begin PBXBuildFile section */
 		1F150246A4DA387424F34388 /* Pods_Food_Snap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C1F4CC0E4B24950F56BBFB /* Pods_Food_Snap.framework */; };
 		41232F261F2DE8A9003ACE6E /* NutritionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41232F251F2DE8A9003ACE6E /* NutritionCard.swift */; };
-		41232F281F2E1E3E003ACE6E /* AddToLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41232F271F2E1E3E003ACE6E /* AddToLibraryViewController.swift */; };
+		41232F281F2E1E3E003ACE6E /* NewMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41232F271F2E1E3E003ACE6E /* NewMealViewController.swift */; };
+		413BE8BC1F72BAE50028C976 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4180B7721F5C63ED0008311A /* Inceptionv3.mlmodel */; };
+		414D43461F7275E300364886 /* MealViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414D43451F7275E300364886 /* MealViewViewModel.swift */; };
+		414D43491F727D6000364886 /* DiaryTableViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414D43481F727D6000364886 /* DiaryTableViewViewModel.swift */; };
 		4152C52A1F29E08000D1D7C4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152C5291F29E08000D1D7C4 /* Constants.swift */; };
 		4152C52E1F2A033D00D1D7C4 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152C52D1F2A033D00D1D7C4 /* CardCell.swift */; };
-		415CCDA01F2A095D0032040C /* FoodDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415CCD9F1F2A095D0032040C /* FoodDetailViewController.swift */; };
+		415CCDA01F2A095D0032040C /* MealPredictionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415CCD9F1F2A095D0032040C /* MealPredictionsViewController.swift */; };
+		4168DAB01F71631300289E13 /* DiarySummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4168DAAF1F71631300289E13 /* DiarySummaryViewController.swift */; };
+		4168DAB21F71634C00289E13 /* DiaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4168DAB11F71634C00289E13 /* DiaryTableViewController.swift */; };
+		4168DAB51F71676E00289E13 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4168DAB41F71676E00289E13 /* UIView.swift */; };
+		4168DABA1F716C2200289E13 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4168DAB91F716C2200289E13 /* Meal.swift */; };
 		41712B951F2E3D82008D8E1D /* Camera-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 41712B941F2E3D81008D8E1D /* Camera-50.png */; };
 		418B499A1F2B86210061860E /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B49991F2B86210061860E /* DiaryViewController.swift */; };
 		418B499E1F2B931F0061860E /* Food.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 418B499D1F2B931E0061860E /* Food.jpg */; };
+		41AA7C421F7421920084BF47 /* NewMealViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AA7C411F7421920084BF47 /* NewMealViewViewModel.swift */; };
 		41AD08791F28D45C00354D00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD08781F28D45C00354D00 /* AppDelegate.swift */; };
 		41AD087E1F28D45C00354D00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41AD087C1F28D45C00354D00 /* Main.storyboard */; };
 		41AD08801F28D45C00354D00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41AD087F1F28D45C00354D00 /* Assets.xcassets */; };
 		41AD08831F28D45C00354D00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41AD08811F28D45C00354D00 /* LaunchScreen.storyboard */; };
-		41BB5B8B1F28F6A2007E1448 /* Inceptionv3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BB5B8A1F28F6A2007E1448 /* Inceptionv3.swift */; };
 		41BB5B8F1F290D10007E1448 /* NutritionixAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BB5B8E1F290D10007E1448 /* NutritionixAPI.swift */; };
+		41CC90301F7436F7001867DB /* MLManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CC902F1F7436F7001867DB /* MLManager.swift */; };
+		41CC90321F745603001867DB /* Conversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CC90311F745603001867DB /* Conversions.swift */; };
+		41D7891A1F7183A600DD00B2 /* NutritionixResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 41D789191F7183A600DD00B2 /* NutritionixResponse.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		41232F251F2DE8A9003ACE6E /* NutritionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionCard.swift; sourceTree = "<group>"; };
-		41232F271F2E1E3E003ACE6E /* AddToLibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToLibraryViewController.swift; sourceTree = "<group>"; };
+		41232F271F2E1E3E003ACE6E /* NewMealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMealViewController.swift; sourceTree = "<group>"; };
+		414D43451F7275E300364886 /* MealViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewViewModel.swift; sourceTree = "<group>"; };
+		414D43481F727D6000364886 /* DiaryTableViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryTableViewViewModel.swift; sourceTree = "<group>"; };
 		4152C5291F29E08000D1D7C4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4152C52D1F2A033D00D1D7C4 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
-		415CCD9F1F2A095D0032040C /* FoodDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailViewController.swift; sourceTree = "<group>"; };
+		415CCD9F1F2A095D0032040C /* MealPredictionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPredictionsViewController.swift; sourceTree = "<group>"; };
+		4168DAAF1F71631300289E13 /* DiarySummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiarySummaryViewController.swift; sourceTree = "<group>"; };
+		4168DAB11F71634C00289E13 /* DiaryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryTableViewController.swift; sourceTree = "<group>"; };
+		4168DAB41F71676E00289E13 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		4168DAB91F716C2200289E13 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		41712B941F2E3D81008D8E1D /* Camera-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Camera-50.png"; sourceTree = "<group>"; };
+		4180B7721F5C63ED0008311A /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 		418B49991F2B86210061860E /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
 		418B499D1F2B931E0061860E /* Food.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Food.jpg; sourceTree = "<group>"; };
+		41AA7C411F7421920084BF47 /* NewMealViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMealViewViewModel.swift; sourceTree = "<group>"; };
 		41AD08751F28D45C00354D00 /* Food Snap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food Snap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41AD08781F28D45C00354D00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41AD087D1F28D45C00354D00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		41AD087F1F28D45C00354D00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41AD08821F28D45C00354D00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41AD08841F28D45C00354D00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		41BB5B8A1F28F6A2007E1448 /* Inceptionv3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inceptionv3.swift; sourceTree = "<group>"; };
 		41BB5B8E1F290D10007E1448 /* NutritionixAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionixAPI.swift; sourceTree = "<group>"; };
+		41CC902F1F7436F7001867DB /* MLManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLManager.swift; sourceTree = "<group>"; };
+		41CC90311F745603001867DB /* Conversions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversions.swift; sourceTree = "<group>"; };
+		41D789191F7183A600DD00B2 /* NutritionixResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NutritionixResponse.json; sourceTree = "<group>"; };
 		5DC1703E033D11080F2B20DF /* Pods-Food Snap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food Snap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Food Snap/Pods-Food Snap.debug.xcconfig"; sourceTree = "<group>"; };
 		BE81446138376EC673E47335 /* Pods-Food Snap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food Snap.release.xcconfig"; path = "Pods/Target Support Files/Pods-Food Snap/Pods-Food Snap.release.xcconfig"; sourceTree = "<group>"; };
 		E4C1F4CC0E4B24950F56BBFB /* Pods_Food_Snap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Food_Snap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,29 +87,136 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		4152C52B1F2A031E00D1D7C4 /* Views */ = {
+		414D43441F7275C500364886 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
-				415CCD9F1F2A095D0032040C /* FoodDetailViewController.swift */,
-				418B49991F2B86210061860E /* DiaryViewController.swift */,
-				41232F271F2E1E3E003ACE6E /* AddToLibraryViewController.swift */,
-				4152C52C1F2A032B00D1D7C4 /* TableViewCells */,
+				414D43451F7275E300364886 /* MealViewViewModel.swift */,
+				41AA7C411F7421920084BF47 /* NewMealViewViewModel.swift */,
 			);
-			path = Views;
+			path = "View Models";
 			sourceTree = "<group>";
 		};
-		4152C52C1F2A032B00D1D7C4 /* TableViewCells */ = {
+		414D43471F727D4800364886 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				414D43481F727D6000364886 /* DiaryTableViewViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		4152C52C1F2A032B00D1D7C4 /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				41232F251F2DE8A9003ACE6E /* NutritionCard.swift */,
+			);
+			path = "Table View Cells";
+			sourceTree = "<group>";
+		};
+		4168DAB31F71675A00289E13 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4168DAB41F71676E00289E13 /* UIView.swift */,
+				41CC90311F745603001867DB /* Conversions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4168DAB81F716BF800289E13 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4168DAB91F716C2200289E13 /* Meal.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		41824A3D1F715665001E81BD /* Application Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				41AD08781F28D45C00354D00 /* AppDelegate.swift */,
+			);
+			path = "Application Delegate";
+			sourceTree = "<group>";
+		};
+		41824A3E1F715679001E81BD /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				414D43471F727D4800364886 /* View Models */,
+				4152C52C1F2A032B00D1D7C4 /* Table View Cells */,
+				4168DAAF1F71631300289E13 /* DiarySummaryViewController.swift */,
+				4168DAB11F71634C00289E13 /* DiaryTableViewController.swift */,
+				418B49991F2B86210061860E /* DiaryViewController.swift */,
+				41824A431F715C19001E81BD /* New Meal View Controller */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		41824A3F1F715694001E81BD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				41D789181F71838F00DD00B2 /* Stubs */,
+				418B499B1F2B930C0061860E /* Assets */,
+				41AD087F1F28D45C00354D00 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		41824A401F7156A9001E81BD /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				41BB5B8D1F290CF9007E1448 /* Nutritionix API */,
+				41CC902F1F7436F7001867DB /* MLManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		41824A411F7156B2001E81BD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				41AD08811F28D45C00354D00 /* LaunchScreen.storyboard */,
+				41AD087C1F28D45C00354D00 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		41824A421F7156BA001E81BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				41AD08841F28D45C00354D00 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		41824A431F715C19001E81BD /* New Meal View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				414D43441F7275C500364886 /* View Models */,
+				41824A441F715CDD001E81BD /* Food Detail View Controller */,
+				41232F271F2E1E3E003ACE6E /* NewMealViewController.swift */,
+			);
+			path = "New Meal View Controller";
+			sourceTree = "<group>";
+		};
+		41824A441F715CDD001E81BD /* Food Detail View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				41824A461F715D27001E81BD /* Table View Cells */,
+				415CCD9F1F2A095D0032040C /* MealPredictionsViewController.swift */,
+			);
+			path = "Food Detail View Controller";
+			sourceTree = "<group>";
+		};
+		41824A461F715D27001E81BD /* Table View Cells */ = {
 			isa = PBXGroup;
 			children = (
 				4152C52D1F2A033D00D1D7C4 /* CardCell.swift */,
-				41232F251F2DE8A9003ACE6E /* NutritionCard.swift */,
 			);
-			path = TableViewCells;
+			path = "Table View Cells";
 			sourceTree = "<group>";
 		};
 		418B499B1F2B930C0061860E /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				4180B7721F5C63ED0008311A /* Inceptionv3.mlmodel */,
 				418B499C1F2B93130061860E /* img */,
 			);
 			path = Assets;
@@ -125,26 +252,17 @@
 		41AD08771F28D45C00354D00 /* Food Snap */ = {
 			isa = PBXGroup;
 			children = (
-				418B499B1F2B930C0061860E /* Assets */,
-				41AD08781F28D45C00354D00 /* AppDelegate.swift */,
-				4152C52B1F2A031E00D1D7C4 /* Views */,
+				41824A3D1F715665001E81BD /* Application Delegate */,
+				41824A3E1F715679001E81BD /* View Controllers */,
+				41824A401F7156A9001E81BD /* Managers */,
 				41C61EBE1F29D6C600284858 /* Constants */,
-				41BB5B8D1F290CF9007E1448 /* Nutritionix API */,
-				41BB5B8C1F28F6AF007E1448 /* ML Model */,
-				41AD08811F28D45C00354D00 /* LaunchScreen.storyboard */,
-				41AD087C1F28D45C00354D00 /* Main.storyboard */,
-				41AD087F1F28D45C00354D00 /* Assets.xcassets */,
-				41AD08841F28D45C00354D00 /* Info.plist */,
+				4168DAB81F716BF800289E13 /* Model */,
+				41824A411F7156B2001E81BD /* Storyboards */,
+				4168DAB31F71675A00289E13 /* Extensions */,
+				41824A3F1F715694001E81BD /* Resources */,
+				41824A421F7156BA001E81BD /* Supporting Files */,
 			);
 			path = "Food Snap";
-			sourceTree = "<group>";
-		};
-		41BB5B8C1F28F6AF007E1448 /* ML Model */ = {
-			isa = PBXGroup;
-			children = (
-				41BB5B8A1F28F6A2007E1448 /* Inceptionv3.swift */,
-			);
-			path = "ML Model";
 			sourceTree = "<group>";
 		};
 		41BB5B8D1F290CF9007E1448 /* Nutritionix API */ = {
@@ -161,6 +279,14 @@
 				4152C5291F29E08000D1D7C4 /* Constants.swift */,
 			);
 			name = Constants;
+			sourceTree = "<group>";
+		};
+		41D789181F71838F00DD00B2 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				41D789191F7183A600DD00B2 /* NutritionixResponse.json */,
+			);
+			path = Stubs;
 			sourceTree = "<group>";
 		};
 		804D41F7BF1A6CC325B62462 /* Frameworks */ = {
@@ -237,6 +363,7 @@
 			files = (
 				41AD08831F28D45C00354D00 /* LaunchScreen.storyboard in Resources */,
 				418B499E1F2B931F0061860E /* Food.jpg in Resources */,
+				41D7891A1F7183A600DD00B2 /* NutritionixResponse.json in Resources */,
 				41AD08801F28D45C00354D00 /* Assets.xcassets in Resources */,
 				41AD087E1F28D45C00354D00 /* Main.storyboard in Resources */,
 				41712B951F2E3D82008D8E1D /* Camera-50.png in Resources */,
@@ -287,10 +414,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Food Snap/Pods-Food Snap-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftOverlays/SwiftOverlays.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftOverlays.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -304,14 +433,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41232F281F2E1E3E003ACE6E /* AddToLibraryViewController.swift in Sources */,
+				41232F281F2E1E3E003ACE6E /* NewMealViewController.swift in Sources */,
+				414D43491F727D6000364886 /* DiaryTableViewViewModel.swift in Sources */,
 				41232F261F2DE8A9003ACE6E /* NutritionCard.swift in Sources */,
+				4168DAB21F71634C00289E13 /* DiaryTableViewController.swift in Sources */,
+				4168DAB01F71631300289E13 /* DiarySummaryViewController.swift in Sources */,
+				41AA7C421F7421920084BF47 /* NewMealViewViewModel.swift in Sources */,
+				4168DAB51F71676E00289E13 /* UIView.swift in Sources */,
 				4152C52A1F29E08000D1D7C4 /* Constants.swift in Sources */,
-				415CCDA01F2A095D0032040C /* FoodDetailViewController.swift in Sources */,
+				41CC90301F7436F7001867DB /* MLManager.swift in Sources */,
+				415CCDA01F2A095D0032040C /* MealPredictionsViewController.swift in Sources */,
 				41AD08791F28D45C00354D00 /* AppDelegate.swift in Sources */,
 				418B499A1F2B86210061860E /* DiaryViewController.swift in Sources */,
+				41CC90321F745603001867DB /* Conversions.swift in Sources */,
+				414D43461F7275E300364886 /* MealViewViewModel.swift in Sources */,
+				4168DABA1F716C2200289E13 /* Meal.swift in Sources */,
 				41BB5B8F1F290D10007E1448 /* NutritionixAPI.swift in Sources */,
-				41BB5B8B1F28F6A2007E1448 /* Inceptionv3.swift in Sources */,
+				413BE8BC1F72BAE50028C976 /* Inceptionv3.mlmodel in Sources */,
 				4152C52E1F2A033D00D1D7C4 /* CardCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,7 +587,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GZN289VFL5;
-				INFOPLIST_FILE = "Food Snap/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Food Snap/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Food-Snap";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -464,7 +602,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GZN289VFL5;
-				INFOPLIST_FILE = "Food Snap/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Food Snap/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Food-Snap";
 				PRODUCT_NAME = "$(TARGET_NAME)";

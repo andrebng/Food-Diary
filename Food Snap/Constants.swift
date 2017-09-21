@@ -33,7 +33,7 @@ import Foundation
 struct Constants {
     
     //TODO: Replace with own ID and KEY
-    static let APPLICATION_ID = "XXX"
-    static let APPLICATION_KEY = "XXX"
+    static let APPLICATION_ID = "772d3cd0"
+    static let APPLICATION_KEY = "254a559df3c98f4b1a552e9564aa0595"
     
 }

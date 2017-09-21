@@ -3,7 +3,8 @@ platform :ios, '11.0'
 use_frameworks!
 
 target 'Food Snap' do
-    pod 'Alamofire'
+    pod 'Alamofire', '~> 4.4.0'
+    pod 'SwiftOverlays'
 end
 
 post_install do |installer|
