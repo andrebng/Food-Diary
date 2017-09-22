@@ -13,7 +13,7 @@
 		413BE8BC1F72BAE50028C976 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4180B7721F5C63ED0008311A /* Inceptionv3.mlmodel */; };
 		414D43461F7275E300364886 /* MealViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414D43451F7275E300364886 /* MealViewViewModel.swift */; };
 		414D43491F727D6000364886 /* DiaryTableViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414D43481F727D6000364886 /* DiaryTableViewViewModel.swift */; };
-		4152C52A1F29E08000D1D7C4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152C5291F29E08000D1D7C4 /* Constants.swift */; };
+		4152C52A1F29E08000D1D7C4 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152C5291F29E08000D1D7C4 /* Configuration.swift */; };
 		4152C52E1F2A033D00D1D7C4 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152C52D1F2A033D00D1D7C4 /* CardCell.swift */; };
 		415CCDA01F2A095D0032040C /* MealPredictionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415CCD9F1F2A095D0032040C /* MealPredictionsViewController.swift */; };
 		4168DAB01F71631300289E13 /* DiarySummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4168DAAF1F71631300289E13 /* DiarySummaryViewController.swift */; };
@@ -40,7 +40,7 @@
 		41232F271F2E1E3E003ACE6E /* NewMealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMealViewController.swift; sourceTree = "<group>"; };
 		414D43451F7275E300364886 /* MealViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewViewModel.swift; sourceTree = "<group>"; };
 		414D43481F727D6000364886 /* DiaryTableViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryTableViewViewModel.swift; sourceTree = "<group>"; };
-		4152C5291F29E08000D1D7C4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4152C5291F29E08000D1D7C4 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		4152C52D1F2A033D00D1D7C4 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		415CCD9F1F2A095D0032040C /* MealPredictionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPredictionsViewController.swift; sourceTree = "<group>"; };
 		4168DAAF1F71631300289E13 /* DiarySummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiarySummaryViewController.swift; sourceTree = "<group>"; };
@@ -258,7 +258,7 @@
 				41824A3D1F715665001E81BD /* Application Delegate */,
 				41824A3E1F715679001E81BD /* View Controllers */,
 				41824A401F7156A9001E81BD /* Managers */,
-				41C61EBE1F29D6C600284858 /* Constants */,
+				41D802391F7525B100E8DF17 /* Configuration */,
 				4168DAB81F716BF800289E13 /* Model */,
 				41824A411F7156B2001E81BD /* Storyboards */,
 				4168DAB31F71675A00289E13 /* Extensions */,
@@ -276,20 +276,20 @@
 			path = "Nutritionix API";
 			sourceTree = "<group>";
 		};
-		41C61EBE1F29D6C600284858 /* Constants */ = {
-			isa = PBXGroup;
-			children = (
-				4152C5291F29E08000D1D7C4 /* Constants.swift */,
-			);
-			name = Constants;
-			sourceTree = "<group>";
-		};
 		41D789181F71838F00DD00B2 /* Stubs */ = {
 			isa = PBXGroup;
 			children = (
 				41D789191F7183A600DD00B2 /* NutritionixResponse.json */,
 			);
 			path = Stubs;
+			sourceTree = "<group>";
+		};
+		41D802391F7525B100E8DF17 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				4152C5291F29E08000D1D7C4 /* Configuration.swift */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 		804D41F7BF1A6CC325B62462 /* Frameworks */ = {
@@ -444,7 +444,7 @@
 				4168DAB01F71631300289E13 /* DiarySummaryViewController.swift in Sources */,
 				41AA7C421F7421920084BF47 /* NewMealViewViewModel.swift in Sources */,
 				4168DAB51F71676E00289E13 /* UIView.swift in Sources */,
-				4152C52A1F29E08000D1D7C4 /* Constants.swift in Sources */,
+				4152C52A1F29E08000D1D7C4 /* Configuration.swift in Sources */,
 				41CC90301F7436F7001867DB /* MLManager.swift in Sources */,
 				415CCDA01F2A095D0032040C /* MealPredictionsViewController.swift in Sources */,
 				41AD08791F28D45C00354D00 /* AppDelegate.swift in Sources */,

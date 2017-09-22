@@ -21,7 +21,7 @@
 //SOFTWARE.
 
 
-//  Constants.swift
+//  Configuration.swift
 //  Food Snap
 //
 //  Created by Andre Nguyen on 7/27/17.
@@ -30,10 +30,10 @@
 
 import Foundation
 
-struct Constants {
+struct API {
     
     //TODO: Replace with own ID and KEY
-    static let APPLICATION_ID = "772d3cd0"
-    static let APPLICATION_KEY = "254a559df3c98f4b1a552e9564aa0595"
+    static let APPLICATION_ID = "XXX"
+    static let APPLICATION_KEY = "XXX"
     
 }

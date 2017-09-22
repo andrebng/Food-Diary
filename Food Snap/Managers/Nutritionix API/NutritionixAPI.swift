@@ -52,7 +52,7 @@ class NutritionixAPI : NSObject {
     ///   - completion: completion handler once api returned data
     func nutritionInfo(foodName: String, completion: @escaping NutritionCompletionHandler) {
         
-        let url = "https://api.nutritionix.com/v1_1/search/\(foodName)?fields=item_name%2Citem_id%2Cbrand_name%2Cnf_calories%2Cnf_total_fat&appId=\(Constants.APPLICATION_ID)&appKey=\(Constants.APPLICATION_KEY)"
+        let url = "https://api.nutritionix.com/v1_1/search/\(foodName)?fields=item_name%2Citem_id%2Cbrand_name%2Cnf_calories%2Cnf_total_fat&appId=\(API.APPLICATION_ID)&appKey=\(API.APPLICATION_KEY)"
         
         Alamofire.request(url, method: .get, encoding: JSONEncoding.default, headers: nil).validate().responseJSON { (response) in
             self.didFetchFoodData(response: response, completion: completion)
