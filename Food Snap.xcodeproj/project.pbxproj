@@ -193,19 +193,19 @@
 			isa = PBXGroup;
 			children = (
 				414D43441F7275C500364886 /* View Models */,
-				41824A441F715CDD001E81BD /* Food Detail View Controller */,
+				41824A441F715CDD001E81BD /* Meal Predictions View Controller */,
 				41232F271F2E1E3E003ACE6E /* NewMealViewController.swift */,
 			);
 			path = "New Meal View Controller";
 			sourceTree = "<group>";
 		};
-		41824A441F715CDD001E81BD /* Food Detail View Controller */ = {
+		41824A441F715CDD001E81BD /* Meal Predictions View Controller */ = {
 			isa = PBXGroup;
 			children = (
 				41824A461F715D27001E81BD /* Table View Cells */,
 				415CCD9F1F2A095D0032040C /* MealPredictionsViewController.swift */,
 			);
-			path = "Food Detail View Controller";
+			path = "Meal Predictions View Controller";
 			sourceTree = "<group>";
 		};
 		41824A461F715D27001E81BD /* Table View Cells */ = {
