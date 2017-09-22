@@ -27,6 +27,8 @@ class DiaryTableViewController: UIViewController {
     
     override func viewDidLoad() {
         
+        setupUI()
+        
         DiaryTableViewViewModel.sharedInstance.didUpdateMeals = { [unowned self] (meals) in
             self.tableView.reloadData()
         }
