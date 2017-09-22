@@ -68,20 +68,15 @@ class NutritionixAPI : NSObject {
         case .success:
             
             if response.response?.statusCode == 200 {
-                puts("\(type(of: response.result.value))")
                 
                 let result_dict = response.result.value as! NSDictionary
                 let result_array = result_dict["hits"] as! NSArray
-                
-                print("Resuts-Array: \(result_array)")
                 
                 let meals = mapToMealArray(jsonDictionaries: result_array)
                 
                 completion(meals, nil)
             }
             else {
-                puts("Status code: \(response.response?.statusCode ?? -1)")
-                
                 completion(nil, .failedRequest)
             }
             

@@ -47,13 +47,29 @@ class DiarySummaryViewController: UIViewController {
     override func viewDidLoad() {
         
         setupUI()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
-        DiaryTableViewViewModel.sharedInstance.didUpdateMeals = { (meals) in
-            //TODO: Update Stats
-        }
+        updateSummary()
     }
     
     // MARK: - Helper Methods
+    
+    func updateSummary() {
+        var caloriesADay : Float = 0.0
+        var fatADay : Float = 0.0
+        
+        for object in DiaryTableViewViewModel.sharedInstance.meals {
+            guard let meal = object as? Meal else { return }
+            caloriesADay += meal.calories
+            fatADay += meal.fat
+        }
+        
+        self.caloriesADayLabel.text = String(format: "%d/2500", Int(caloriesADay))
+        self.fatLabel.text = String(format: "%d g", Int(fatADay))
+    }
     
     private func setupUI() {
         

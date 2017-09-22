@@ -32,15 +32,7 @@ import UIKit
 import CoreML
 import SwiftOverlays
 
-//UNSUED: XOR
-precedencegroup BooleanPrecedence { associativity: left }
-infix operator ^^ : BooleanPrecedence
-
-func ^^(lhs: Bool, rhs: Bool) -> Bool {
-    return lhs != rhs
-}
-
-//MARK: AddToLibraryDelegate Protocol
+// MARK: - New Meal Protocol
 protocol NewMealDelegate {
     func setMealData(viewModel: MealViewViewModel)
 }
@@ -65,18 +57,11 @@ class NewMealViewController : UIViewController, UINavigationControllerDelegate {
     
     // MARK: -
     
-    var diaryTableDelegate: DiaryTableDelegate?
-    var diaryDelegate : DiaryDelegate?
-    var delegate : NewMealDelegate?
-    
-    // MARK: -
-    
     var viewModel: NewMealViewViewModel?
-    var meals : [Meal]? = []
     
     // MARK: -
     
-    let nutritionixAPI: NutritionixAPI = NutritionixAPI()
+    var mealPredictions: [Meal]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -109,10 +94,11 @@ class NewMealViewController : UIViewController, UINavigationControllerDelegate {
         }
         
         viewModel?.didRecognizeImages = { [unowned self] (meals) in
-            self.meals = meals
-            self.performSegue(withIdentifier: "NutritionSelectionSegue", sender: self)
+            self.mealPredictions = meals
+            self.performSegue(withIdentifier: MealPredictionsViewController.segueIdentifier, sender: self)
         }
         
+        // Set Delegates & Tags
         self.nameOfDishTextView.delegate = self
         
         self.caloriesTextField.tag = 2
@@ -134,15 +120,13 @@ class NewMealViewController : UIViewController, UINavigationControllerDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == MealPredictionsViewController.segueIdentifier {
-            let vc = segue.destination as! MealPredictionsViewController
+            guard let vc = segue.destination as? MealPredictionsViewController else { return }
+            vc.mealPredictions = self.mealPredictions
             vc.delegate = self
-            
-            if let meals = self.meals {
-                vc.meals = meals
-            }
         }
     }
     
+    // Hide keyboard on touch
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.nameOfDishTextView.resignFirstResponder()
         self.caloriesTextField.resignFirstResponder()
@@ -169,27 +153,19 @@ class NewMealViewController : UIViewController, UINavigationControllerDelegate {
     // MARK: - Action Methods
     
     @IBAction func clickedCamera(_ sender: Any) {
-        
         if !UIImagePickerController.isSourceTypeAvailable(.camera) {
             return
         }
         
         let cameraPicker = UIImagePickerController()
-        cameraPicker.delegate = self
-        cameraPicker.sourceType = .camera
-        cameraPicker.allowsEditing = false
-        present(cameraPicker, animated: true)
+        cameraPicker.presentCamera(viewController: self)
     }
     
     @IBAction func clickedLibrary(_ sender: Any) {
         let picker = UIImagePickerController()
-        picker.allowsEditing = false
-        picker.delegate = self
-        picker.sourceType = .photoLibrary
-        present(picker, animated: true)
+        picker.presentPhotoLibrary(viewController: self)
     }
     
-    // Convert entries into Food-Model
     @IBAction func clickedCTA(_ sender: Any) {
         
         if (viewModel?.state() == .isEmpty) {
@@ -205,6 +181,7 @@ class NewMealViewController : UIViewController, UINavigationControllerDelegate {
             let mutableMeals = DiaryTableViewViewModel.sharedInstance.meals
             guard let meal = viewModel?.toMeal() else { return }
             mutableMeals.add(meal)
+            
             DiaryTableViewViewModel.sharedInstance.meals = mutableMeals
             
             self.dismiss(animated: true, completion: nil)
@@ -212,7 +189,7 @@ class NewMealViewController : UIViewController, UINavigationControllerDelegate {
     }
 }
 
-// MARK: - AddToLibraryDelegate
+// MARK: - New Meal Delegate
 
 @available(iOS 11.0, *)
 extension NewMealViewController : NewMealDelegate {

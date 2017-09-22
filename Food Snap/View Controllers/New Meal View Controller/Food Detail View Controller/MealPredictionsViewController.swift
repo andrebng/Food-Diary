@@ -42,10 +42,11 @@ class MealPredictionsViewController : UIViewController {
     
     var delegate : NewMealDelegate?
     
-    @IBOutlet weak var tableView: UITableView!
+    // MARK: -
     
-    // Array of food items
-    var meals: [Meal] = []
+    var mealPredictions: [Meal]?
+    
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,22 +56,15 @@ class MealPredictionsViewController : UIViewController {
         self.tableView.separatorColor = UIColor.clear
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
 }
 
-//MARK: UITableViewDelegate, UITableViewDatasource
+// MARK: - UITableView Delegate, UITableView Datasource
+
 extension MealPredictionsViewController : UITableViewDelegate, UITableViewDataSource {
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.meals.count
+        guard let count = mealPredictions?.count else { return 0 }
+        return count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -80,8 +74,10 @@ extension MealPredictionsViewController : UITableViewDelegate, UITableViewDataSo
         
         cell.delegate = self
         
-        let viewModel = MealViewViewModel(meal: self.meals[indexPath.row])
-        cell.configure(viewModel: viewModel)
+        guard let meals = mealPredictions else { fatalError("Uninitialized meal predictions array") }
+        
+        let meal = meals[indexPath.row]
+        cell.configure(viewModel: MealViewViewModel(meal: meal))
         
         return cell
         
@@ -93,9 +89,9 @@ extension MealPredictionsViewController : UITableViewDelegate, UITableViewDataSo
     
 }
 
-//MARK: CardCellDelegate
+// MARK: - Meal Prediction Delegate
+
 extension MealPredictionsViewController : MealPredictionsDelegate {
-    
     func chooseMeal(viewModel: MealViewViewModel) {
         self.delegate?.setMealData(viewModel: viewModel)
         self.navigationController?.popViewController(animated: true)

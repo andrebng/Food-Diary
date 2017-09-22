@@ -28,6 +28,7 @@
 		41AD087E1F28D45C00354D00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41AD087C1F28D45C00354D00 /* Main.storyboard */; };
 		41AD08801F28D45C00354D00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41AD087F1F28D45C00354D00 /* Assets.xcassets */; };
 		41AD08831F28D45C00354D00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41AD08811F28D45C00354D00 /* LaunchScreen.storyboard */; };
+		41B0ED8A1F75123600C3A456 /* UIImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B0ED891F75123600C3A456 /* UIImagePickerController.swift */; };
 		41BB5B8F1F290D10007E1448 /* NutritionixAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BB5B8E1F290D10007E1448 /* NutritionixAPI.swift */; };
 		41CC90301F7436F7001867DB /* MLManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CC902F1F7436F7001867DB /* MLManager.swift */; };
 		41CC90321F745603001867DB /* Conversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CC90311F745603001867DB /* Conversions.swift */; };
@@ -57,6 +58,7 @@
 		41AD087F1F28D45C00354D00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41AD08821F28D45C00354D00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41AD08841F28D45C00354D00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41B0ED891F75123600C3A456 /* UIImagePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImagePickerController.swift; sourceTree = "<group>"; };
 		41BB5B8E1F290D10007E1448 /* NutritionixAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionixAPI.swift; sourceTree = "<group>"; };
 		41CC902F1F7436F7001867DB /* MLManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLManager.swift; sourceTree = "<group>"; };
 		41CC90311F745603001867DB /* Conversions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversions.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			children = (
 				4168DAB41F71676E00289E13 /* UIView.swift */,
 				41CC90311F745603001867DB /* Conversions.swift */,
+				41B0ED891F75123600C3A456 /* UIImagePickerController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -433,6 +436,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41B0ED8A1F75123600C3A456 /* UIImagePickerController.swift in Sources */,
 				41232F281F2E1E3E003ACE6E /* NewMealViewController.swift in Sources */,
 				414D43491F727D6000364886 /* DiaryTableViewViewModel.swift in Sources */,
 				41232F261F2DE8A9003ACE6E /* NutritionCard.swift in Sources */,

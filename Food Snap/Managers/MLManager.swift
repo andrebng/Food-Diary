@@ -47,8 +47,6 @@ class MLManager {
             return nil
         }
         
-        print("Prediction: \(prediction.classLabel)")
-        
         return prediction.classLabel.components(separatedBy: ",")[0]
     }
     
