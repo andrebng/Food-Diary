@@ -22,6 +22,7 @@ class DiaryTableViewController: UIViewController {
     // MARK: - Properties
     
     @IBOutlet var tableView: UITableView!
+    @IBOutlet var emptyStateView: UIView!
     
     // MARK: - View Controller Life Cycle
     
@@ -36,6 +37,12 @@ class DiaryTableViewController: UIViewController {
         // Setup Table View
         self.tableView.separatorColor = UIColor.clear
         self.tableView.backgroundColor = UIColor.clear
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.emptyStateView.isHidden = (DiaryTableViewViewModel.sharedInstance.hasMeals) ? true : false
     }
     
     // MARK: - Helper Methods
@@ -67,6 +74,9 @@ extension DiaryTableViewController: DiaryTableDelegate {
 extension DiaryTableViewController : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        self.emptyStateView.isHidden = (DiaryTableViewViewModel.sharedInstance.hasMeals) ? true : false
+        
         return DiaryTableViewViewModel.sharedInstance.numberOfMeals
     }
     

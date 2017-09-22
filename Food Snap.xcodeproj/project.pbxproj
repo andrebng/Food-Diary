@@ -33,6 +33,7 @@
 		41CC90301F7436F7001867DB /* MLManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CC902F1F7436F7001867DB /* MLManager.swift */; };
 		41CC90321F745603001867DB /* Conversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CC90311F745603001867DB /* Conversions.swift */; };
 		41D7891A1F7183A600DD00B2 /* NutritionixResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 41D789191F7183A600DD00B2 /* NutritionixResponse.json */; };
+		41D8023B1F752BF100E8DF17 /* Meal.png in Resources */ = {isa = PBXBuildFile; fileRef = 41D8023A1F752BF000E8DF17 /* Meal.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		41CC902F1F7436F7001867DB /* MLManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLManager.swift; sourceTree = "<group>"; };
 		41CC90311F745603001867DB /* Conversions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversions.swift; sourceTree = "<group>"; };
 		41D789191F7183A600DD00B2 /* NutritionixResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NutritionixResponse.json; sourceTree = "<group>"; };
+		41D8023A1F752BF000E8DF17 /* Meal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Meal.png; sourceTree = "<group>"; };
 		5DC1703E033D11080F2B20DF /* Pods-Food Snap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food Snap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Food Snap/Pods-Food Snap.debug.xcconfig"; sourceTree = "<group>"; };
 		BE81446138376EC673E47335 /* Pods-Food Snap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food Snap.release.xcconfig"; path = "Pods/Target Support Files/Pods-Food Snap/Pods-Food Snap.release.xcconfig"; sourceTree = "<group>"; };
 		E4C1F4CC0E4B24950F56BBFB /* Pods_Food_Snap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Food_Snap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -228,6 +230,7 @@
 		418B499C1F2B93130061860E /* img */ = {
 			isa = PBXGroup;
 			children = (
+				41D8023A1F752BF000E8DF17 /* Meal.png */,
 				41712B941F2E3D81008D8E1D /* Camera-50.png */,
 				418B499D1F2B931E0061860E /* Food.jpg */,
 			);
@@ -370,6 +373,7 @@
 				41AD08801F28D45C00354D00 /* Assets.xcassets in Resources */,
 				41AD087E1F28D45C00354D00 /* Main.storyboard in Resources */,
 				41712B951F2E3D82008D8E1D /* Camera-50.png in Resources */,
+				41D8023B1F752BF100E8DF17 /* Meal.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -25,8 +25,8 @@ class DiaryTableViewViewModel {
     
     // MARK: -
     
+    var hasMeals: Bool { return meals.count > 0 }
     var numberOfMeals: Int { return meals.count }
-    
     var didUpdateMeals: (([Meal]) -> ())?
     
     // MARK: Public Interface
